@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel = "methods">
+  <test thread-count="2" name="Test">
+  
+  <parameter name="browser" value="">Edge</parameter>
+  
+  <!-- 
+  <groups>
+  <define name="SPRINTTEST">
+  <include name = "Sanity"/>
+  <include name = "Regression"/>
+  </define>
+  <run>
+  <include name = "SPRINTTEST"/>
+  </run>
+  </groups> -->
+    <classes>
+    
+   <!--   <class name="Axis.QA.NewTest"/>
+    <class name="Axis.QA.Prioritytesting"/>
+    <class name="Axis.QA.Enabledtesting"/>
+    <class name="Axis.QA.DependsOnMethodeg"/>  -->
+    
+    
+    <class name="Axis.QA.ParallelTesting"/>
+    <class name="Axis.QA.ParameterTesting"/>
+    </classes>
+    </test>
+    </suite>
